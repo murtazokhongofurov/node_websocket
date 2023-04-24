@@ -10,6 +10,7 @@ const socket = new Websocket("ws://localhost:8080");
 
 socket.on("message", (message) => {
     console.log("Recived message: ${message}");
+    console.log(">>>>>",message);
 });
 
 r1.on("line", (input) => {
